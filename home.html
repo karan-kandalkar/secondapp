@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<!-- HERO SECTION -->
+<section class="portfolio-hero-section">
+    <div class="portfolio-hero-container">
+
+        <div class="portfolio-hero-content">
+            <h1 class="portfolio-hero-title">
+                Hi, I'm <span class="portfolio-highlight-text">Saurav</span>
+            </h1>
+
+            <h2 class="portfolio-hero-subtitle">
+                Python & Django Developer
+            </h2>
+
+            <p class="portfolio-hero-description">
+                I build modern, responsive, and user-friendly web applications
+                using Django, HTML, CSS, JavaScript, and Bootstrap.
+            </p>
+
+            <div class="portfolio-hero-button-group">
+                <a href="#" class="portfolio-primary-button">
+                    View Projects
+                </a>
+
+                <a href="{% url 'contact' %}" class="portfolio-secondary-button">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-hero-image-wrapper">
+            <img 
+                src="{% static "images/logo.jpeg" %}" 
+                alt="Portfolio Image"
+                class="portfolio-hero-image"
+            >
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="portfolio-about-section">
+    <div class="portfolio-about-container">
+
+        <div class="portfolio-section-header">
+            <h2 class="portfolio-section-title">
+                About Me
+            </h2>
+
+            <p class="portfolio-section-subtitle">
+                Learn more about my journey and skills
+            </p>
+        </div>
+
+        <div class="portfolio-about-content">
+            <p class="portfolio-about-text">
+                I am a passionate Django developer currently learning full-stack
+                web development. I enjoy creating clean UI designs and powerful
+                backend systems.
+            </p>
+
+            <p class="portfolio-about-text">
+                My goal is to become a professional software developer and work
+                on real-world projects that solve meaningful problems.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section class="portfolio-skills-section">
+    <div class="portfolio-skills-container">
+
+        <div class="portfolio-section-header">
+            <h2 class="portfolio-section-title">
+                My Skills
+            </h2>
+        </div>
+
+        <div class="portfolio-skills-grid">
+
+            <div class="portfolio-skill-card">
+                <h3 class="portfolio-skill-title">HTML</h3>
+                <p class="portfolio-skill-description">
+                    Semantic and responsive webpage structure.
+                </p>
+            </div>
+
+            <div class="portfolio-skill-card">
+                <h3 class="portfolio-skill-title">CSS</h3>
+                <p class="portfolio-skill-description">
+                    Modern styling, animations, and layouts.
+                </p>
+            </div>
+
+            <div class="portfolio-skill-card">
+                <h3 class="portfolio-skill-title">Bootstrap</h3>
+                <p class="portfolio-skill-description">
+                    Responsive design using Bootstrap framework.
+                </p>
+            </div>
+
+            <div class="portfolio-skill-card">
+                <h3 class="portfolio-skill-title">Python</h3>
+                <p class="portfolio-skill-description">
+                    Backend programming and problem solving.
+                </p>
+            </div>
+
+            <div class="portfolio-skill-card">
+                <h3 class="portfolio-skill-title">Django</h3>
+                <p class="portfolio-skill-description">
+                    Building dynamic and scalable web applications.
+                </p>
+            </div>
+
+            <div class="portfolio-skill-card">
+                <h3 class="portfolio-skill-title">JavaScript</h3>
+                <p class="portfolio-skill-description">
+                    Interactive frontend functionality and DOM manipulation.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PROJECT SECTION -->
+<section class="portfolio-project-section">
+    <div class="portfolio-project-container">
+
+        <div class="portfolio-section-header">
+            <h2 class="portfolio-section-title">
+                My Projects
+            </h2>
+        </div>
+
+        <div class="portfolio-project-grid">
+
+            <div class="portfolio-project-card">
+                <div class="portfolio-project-image-wrapper">
+                    <img 
+                        src="{% static "images/project1.jpg" %}" 
+                        alt="Project Image"
+                        class="portfolio-project-image"
+                    >
+                </div>
+
+                <div class="portfolio-project-content">
+                    <h3 class="portfolio-project-title">
+                        Student Management System
+                    </h3>
+
+                    <p class="portfolio-project-description">
+                        A complete Django-based student management system with
+                        authentication and dashboard features.
+                    </p>
+
+                    <a href="#" class="portfolio-project-button">
+                        View Details
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="portfolio-project-card">
+                <div class="portfolio-project-image-wrapper">
+                    <img 
+                        src="{% static "images/project2.jpg" %}" 
+                        alt="Project Image"
+                        class="portfolio-project-image"
+                    >
+                </div>
+
+                <div class="portfolio-project-content">
+                    <h3 class="portfolio-project-title">
+                        Portfolio Website
+                    </h3>
+
+                    <p class="portfolio-project-description">
+                        Personal responsive portfolio website using Django and
+                        custom CSS animations.
+                    </p>
+
+                    <a href="#" class="portfolio-project-button">
+                        View Details
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="portfolio-contact-section">
+    <div class="portfolio-contact-container">
+
+        <div class="portfolio-section-header">
+            <h2 class="portfolio-section-title">
+                Contact Me
+            </h2>
+
+            <p class="portfolio-section-subtitle">
+                Let's work together
+            </p>
+        </div>
+
+        <form class="portfolio-contact-form">
+
+            <div class="portfolio-form-group">
+                <input 
+                    type="text" 
+                    placeholder="Your Name"
+                    class="portfolio-form-input"
+                >
+            </div>
+
+            <div class="portfolio-form-group">
+                <input 
+                    type="email" 
+                    placeholder="Your Email"
+                    class="portfolio-form-input"
+                >
+            </div>
+
+            <div class="portfolio-form-group">
+                <textarea 
+                    placeholder="Your Message"
+                    class="portfolio-form-textarea"
+                ></textarea>
+            </div>
+
+            <button type="submit" class="portfolio-submit-button">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+{% endblock %}
